@@ -1,1 +1,203 @@
-d
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos García - Portafolio de Analista de Datos</title>
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --section-bg: #ffffff;
+            --accent-color: #0284c7;
+            --accent-hover: #0369a1;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --tag-bg: #e0f2fe;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.8rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 2rem;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        section {
+            background: var(--section-bg);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background-color: var(--tag-bg);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .project-card {
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #f8fafc;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .project-card p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 3rem 1rem; }
+            .container { margin-top: 1rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Marcos García</h1>
+        <p>Analista de Datos y Seguridad | Ing. en Ciencia de Datos</p>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Perfil Profesional</h2>
+            <p>Especialista en procesamiento de información, optimización de bases de datos y automatización de procesos. Enfocado en transformar datos crudos en soluciones accionables y eficientar flujos de trabajo empresariales mediante scripting, analítica y diseño de arquitecturas escalables.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Stack Tecnológico y Herramientas</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python (Scripting & Automatización)</span>
+                <span class="skill-tag">SQL / MySQL / MariaDB</span>
+                <span class="skill-tag">SOQL (Salesforce)</span>
+                <span class="skill-tag">ClicData (Dashboards & ETL)</span>
+                <span class="skill-tag">cPanel & Gestión de Producción</span>
+                <span class="skill-tag">Integración de APIs</span>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="project-card">
+                <h3>Flow de Datos - Consultoría Analítica</h3>
+                <p>Creación de vistas y transformaciones de datos complejas mediante funciones personalizadas y lógica condicional. Diseño de dashboards interactivos y modelos de automatización para clientes.</p>
+                <p class="tech-stack">Tecnologías: ClicData, Python, SQL</p>
+            </div>
+
+            <div class="project-card">
+                <h3>MGESTION_RH (CLASS HRMS)</h3>
+                <p>Desarrollo de un sistema de gestión de recursos humanos multi-empresa. Diseño de estructuras de tablas relacionales y sincronización de archivos documentales mediante integración con Microsoft Graph API (OneDrive).</p>
+                <p class="tech-stack">Tecnologías: Bases de Datos Relacionales, API REST, Seguridad de Datos</p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Optimización de Bases de Datos en Producción</h3>
+                <p>Reestructuración y ejecución de consultas de migración de datos masivas directamente en entornos de producción, optimizando relaciones y reduciendo tiempos de carga de registros.</p>
+                <p class="tech-stack">Tecnologías: cPanel, MySQL, MariaDB</p>
+            </div>
+        </section>
+
+        <section id="contacto" style="text-align: center;">
+            <h2>Contacto</h2>
+            <p>¿Buscas automatizar procesos o mejorar la analítica de tu negocio?</p>
+            <a href="mailto:tu-correo@ejemplo.com" class="contact-btn">Enviar un correo</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Marcos García. Ciudad de México, México.</p>
+    </footer>
+
+</body>
+</html>
